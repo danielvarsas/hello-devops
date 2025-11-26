@@ -2,10 +2,9 @@ body {
   margin: 0;
   background: #0f172a;
   font-family: Arial, sans-serif;
-  overflow: hidden; /* ne legyen scrollbar */
+  overflow: hidden;
 }
 
-/* Szöveg teljes képernyő közepén */
 .center-text {
   position: absolute;
   top: 50%;
@@ -15,23 +14,33 @@ body {
   font-size: 3rem;
 }
 
-/* Mókus, ami a TELJES képernyőn mozog */
+/* Base squirrel style */
 .squirrel {
-  position: fixed;       /* <<< FONTOS: NE a komponensben lebegjen, hanem egész képernyőn */
+  position: fixed;
   top: 0;
   left: 0;
   font-size: 4rem;
-  animation: float-squirrel 20s linear infinite;
 }
 
-@keyframes float-squirrel {
-  0% {
-    transform: translate(-20vw, 60vh) rotate(0deg);
-  }
-  50% {
-    transform: translate(50vw, 10vh) rotate(15deg);
-  }
-  100% {
-    transform: translate(120vw, 70vh) rotate(-10deg);
-  }
+/* FIRST squirrel - slow float */
+.squirrel1 {
+  animation: float-squirrel-1 20s linear infinite;
+}
+
+@keyframes float-squirrel-1 {
+  0%   { transform: translate(-20vw, 60vh) rotate(0deg); }
+  50%  { transform: translate(50vw, 10vh) rotate(15deg); }
+  100% { transform: translate(120vw, 70vh) rotate(-10deg); }
+}
+
+/* SECOND squirrel - different path */
+.squirrel2 {
+  animation: float-squirrel-2 25s linear infinite;
+  opacity: 0.9;
+}
+
+@keyframes float-squirrel-2 {
+  0%   { transform: translate(-30vw, 20vh) rotate(-10deg); }
+  50%  { transform: translate(40vw, 80vh) rotate(5deg); }
+  100% { transform: translate(130vw, 30vh) rotate(20deg); }
 }

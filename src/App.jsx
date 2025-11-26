@@ -7,7 +7,11 @@ function App() {
         Hello DevOps
       </div>
 
-      <div className="squirrel">🐿️</div>
+      {/* First squirrel */}
+      <div className="squirrel squirrel1">🐿️</div>
+
+      {/* Second squirrel */}
+      <div className="squirrel squirrel2">🐿️</div>
     </>
   );
 }
