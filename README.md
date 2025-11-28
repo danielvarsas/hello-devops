@@ -64,3 +64,32 @@ http://localhost:5173
 
 Open this link in your browser.
 
+---
+
+## Docker
+
+This project can also be built and executed inside a Docker container.
+
+### 1. Build the Docker image
+
+Run the following command in the project root folder (where the Dockerfile is located):
+
+```bash
+docker build -t hello-devops:v1 .
+```
+
+## 2. Run the container
+
+To start the application inside a Docker container:
+
+```bash
+docker run -p 8080:80 hello-devops:v1
+```
+
+After running the command, the app will be available in your browser at:
+
+```bash
+http://localhost:8080
+```
+
+
