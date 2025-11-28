@@ -12,6 +12,8 @@ function App() {
 
       {/* Second squirrel */}
       <div className="squirrel squirrel2">🐿️</div>
+
+      <div className="squirrel squirrel3">🐿️</div>
     </>
   );
 }
