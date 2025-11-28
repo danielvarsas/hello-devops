@@ -35,7 +35,7 @@ body {
 
 /* SECOND squirrel - different path */
 .squirrel2 {
-  animation: float-squirrel-2 25s linear infinite;
+  animation: float-squirrel-2 50s linear infinite;
   opacity: 0.9;
 }
 
