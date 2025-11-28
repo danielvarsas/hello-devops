@@ -44,3 +44,16 @@ body {
   50%  { transform: translate(40vw, 80vh) rotate(5deg); }
   100% { transform: translate(130vw, 30vh) rotate(20deg); }
 }
+
+.squirrel3 {
+  animation: float-squirrel-2 10s linear infinite;
+  opacity: 0.9;
+}
+
+@keyframes float-squirrel-2 {
+  0%   { transform: translate(-30vw, 20vh) rotate(-10deg); }
+  50%  { transform: translate(40vw, 80vh) rotate(5deg); }
+  100% { transform: translate(130vw, 30vh) rotate(20deg); }
+}
+
+
