@@ -91,5 +91,29 @@ After running the command, the app will be available in your browser at:
 ```bash
 http://localhost:8080
 ```
+## GitHub Container Registry (CI Output)
 
+This project includes an automated CI pipeline using **GitHub Actions**.  
+On every push to the `main` branch, the pipeline:
 
+- builds the application
+- builds a Docker image
+- pushes the image to **GitHub Container Registry (GHCR)**
+
+### 🔽 Pull the image
+
+```bash
+docker pull ghcr.io/danielvarsas/hello-devops:latest
+```
+
+## Run the container
+
+```bash
+docker run -p 8080:80 ghcr.io/danielvarsas/hello-devops:latest
+```
+
+## The application will be available at:
+
+```bash
+http://localhost:8080
+```
